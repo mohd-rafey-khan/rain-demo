@@ -1,0 +1,114 @@
+body{
+	margin:0;
+	padding:0;
+	background-image : linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(back.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+}
+.rain{
+
+    height:100%;
+    width:100%; 
+    background:url(rain.png);  
+    animation: rain .3s linear infinite;
+}
+.rain h2{
+   color:green;
+   font-size:40px;
+   text-align:center;
+}
+.rain .h{
+
+     height:500px;
+     width:500px;
+     margin-top:10px;
+     margin-left:420px;
+     border-top-left-radius:70px 70px;
+     border-bottom-right-radius:70px 70px;
+     transform: rotateX(-100deg) rotateZ(-50deg);
+     transition-duration:2s;
+     background:rgba(0,0,0,0.5);
+     text-align:center;
+    
+}
+.rain .h h1{
+   
+  color:blue;
+  float:left;
+  margin-left:250px;
+  font-size:40px;
+  border-bottom: 6px solid #4caf50;
+  margin-top:50px;
+  padding: 15px 
+}
+.rain .h .textbox1{
+    width:50%;
+    padding:8px;
+    overflow:hidden;
+    margin-top:100px;
+    border:groove;
+    border-color :blue;
+    background:rgba(0,0,0,0.5);
+    color:white;
+}
+.rain .h .textbox2{
+    width:50%;
+    padding:8px;
+    overflow:hidden;
+    margin-top:100px;
+    border:groove;
+    border-color:blue;
+    background:rgba(0,0,0,0.5);
+    color:white;
+}
+.rain .h .btn{
+    width:50%;
+    padding:8px;
+    overflow:hidden;
+    margin-top:100px;
+    border:grove;
+    border-color:#4caf50;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    
+}
+
+.rain .h:hover{
+
+    height:700px;
+    width:600px; 
+    transition: .50s;
+    transform: rotateX(0deg) rotateZ(0deg);
+    background:rgba(0,0,0,0.5);     
+    border:groove;
+    animation: h 2s linear infinite;
+}
+
+@keyframes rain{
+
+  
+   100%{
+       background-position: 20% 100%; 
+   }
+}
+
+@keyframes h{
+  
+   0%{
+        border-color:green;
+   }
+
+   30%{
+        border-color:blue;
+   }
+   60%{
+        border-color:red;
+   }
+   80%{
+        border-color:yellow;
+   }
+   100%{
+        border-color:pink;
+   }
+}
